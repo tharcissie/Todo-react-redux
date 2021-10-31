@@ -2,7 +2,7 @@ import './App.css';
 import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import {imagesArray, imageIndex, numberOfPages, currentPage, fetchBackground, setPage, getNextImage, getPreviousImage} from '../background/backgroundSlice'
-
+import Quote from '../quotes/quote';
 
 function App() {
     const dispatch = useDispatch();
@@ -67,6 +67,7 @@ function App() {
                     arrow_forward_ios
                 </span>
             </section>
+            <Quote/>
         </div>
     );
 }
