@@ -22,7 +22,7 @@ const options = {
     initialState: {
         images : [], 
         previousPage: 0,
-        page: 1, 
+        page: 3, 
         imageIndex: 0, 
         totalPages: 0,
         isLoading:false,

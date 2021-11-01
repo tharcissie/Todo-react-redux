@@ -20,7 +20,10 @@ export const fetchQuote = createAsyncThunk('quote/fetchQuote',
 const options = {
     name:'quote',
     initialState:{
-        quote:''
+        quote:{
+            content:'',
+            author:''
+        }
     },
     isLoading:false, 
     hasError:false,

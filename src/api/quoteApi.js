@@ -11,7 +11,7 @@ const quoteAPI = {
            
             if(response.ok){
                 const jsonResponse = await response.json();
-                const quote = jsonResponse.content
+                const quote = jsonResponse
                 return quote;
             }else{
                 throw new Error('failed!')

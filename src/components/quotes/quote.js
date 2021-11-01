@@ -14,7 +14,8 @@ function Quote() {
 
     return (
         <div>
-            <h3>{quote}</h3>
+            <h3>{quote.content}</h3>
+            <p>{quote.author}</p>
         </div>)
 }
 

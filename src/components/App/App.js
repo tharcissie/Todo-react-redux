@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import {imagesArray, imageIndex, numberOfPages, currentPage, fetchBackground, setPage, getNextImage, getPreviousImage} from '../background/backgroundSlice'
 import Quote from '../quotes/quote';
+import Weather from '../weather/weather';
 
 function App() {
     const dispatch = useDispatch();
@@ -59,6 +60,7 @@ function App() {
 
     return (
         <div className="App" style={style} >
+            <Weather/>
             <section >
                 <span id="prev"  onClick={handlePreviousImage}>
                     arrow_back_ios
