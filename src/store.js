@@ -1,5 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit';
-//import todosReducer from '../features/Todos/todosSlice';
+import todosReducer from './components/goals/goalSlice';
 import weatherReducer from './components/weather/weatherSlice';
 import quoteReducer from './components/quotes/quoteSlice';
 import imageReducer from './components/background/backgroundSlice';
@@ -7,7 +7,7 @@ import imageReducer from './components/background/backgroundSlice';
 const rootReducer = {
     image: imageReducer,
     quote: quoteReducer,
-    //todos: todosReducer,
+    todos: todosReducer,
     weather: weatherReducer,
 }
 
