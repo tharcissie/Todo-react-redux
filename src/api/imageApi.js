@@ -4,7 +4,6 @@ const accessKey ='cFFapIyud2P8l8ZXXjmdEVTcJ2cLDYdKnKpQYEm8Io0';
 const imageAPI = {
     async fetchBackground(pageToFetch){
         const query = 'lake'
-        //const url = `/.netlify/functions/image?page=${pageToFetch}&query=${query}`
         const url = `https://api.unsplash.com/search/photos?client_id=${accessKey}&page=${pageToFetch}&query=${query}`;
             const response = await fetch(url, {
                 method: 'GET',

@@ -24,20 +24,22 @@ function GoalList() {
                         <h5>Active</h5>
                         {goals.map(goal => {
                             const { id, text, isCompleted } = goal;
-                            {
+                            
                                 if (!goal.isCompleted)
-                                    return <Goal id={id} text={text} isCompleted={isCompleted} />
-                            }
+                                    return <Goal key={id} id={id} text={text} isCompleted={isCompleted} />
+                                    return null
+                            
                         })}
                     </div>
                     <div className="col-md-6" >
                         <h5>Completed</h5>
                         {goals.map(goal => {
                             const { id, text, isCompleted } = goal;
-                            {
+                            
                                 if (goal.isCompleted)
-                                    return <Goal id={id} text={text} isCompleted={isCompleted} />
-                            }
+                                    return <Goal key={id} id={id} text={text} isCompleted={isCompleted} />
+                                    return null
+                            
                         })}
                     </div>
                 </div>

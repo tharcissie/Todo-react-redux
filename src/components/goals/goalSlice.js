@@ -3,27 +3,27 @@ import { createSlice } from "@reduxjs/toolkit";
 const options = {
     name:'goals',
     initialState:{goals:[{
-        id:'1',
+        id:'13456',
         text:'Shoping',
         isCompleted:false
     },
     {
-        id:'2',
+        id:'29',
         text:'Vising my Mom',
         isCompleted:false
     },
     {
-        id:'3',
+        id:'365',
         text:'Cooking noodles',
         isCompleted:true
     },
     {
-        id:'4',
+        id:'445',
         text:'Getting my passport',
         isCompleted:false
     },
     {
-        id:'4',
+        id:'4345',
         text:'Doing my project',
         isCompleted:false
     },

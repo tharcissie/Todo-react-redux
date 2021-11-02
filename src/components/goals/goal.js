@@ -18,7 +18,7 @@ function Goal(props) {
 
 
     return (
-        <div key={id}>
+        <div>
 
             <div>
 
