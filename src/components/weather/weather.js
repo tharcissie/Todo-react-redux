@@ -19,25 +19,24 @@ function Weather() {
 
  if(loading){
         return (
-            <section className="weather">
-                <p>Loading weather data</p>
-            </section>
+            <div>
+                <p>Loading weather data...</p>
+            </div>
         );
     }else if(error){
         return (
-            <section className="weather">
+            <div>
                 <p>Error! {error.message}</p>
-            </section>
+            </div>
         );
     }else{
         return (
-            <section className="weather">
-                <img className="weather-icon" src={weather.icon} alt="weatherIcon" />  
-                <div>
-                    <h2>{weather.temperature}°C</h2>
-                    <p>{weather.description}</p>
+            <div>
+                <img src={weather.icon} alt="weatherIcon" />  
+                <div className="text-light">
+                    <h4>{weather.temperature}°C</h4>
                 </div>
-            </section>
+            </div>
         )
     }
 }

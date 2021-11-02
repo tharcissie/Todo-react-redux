@@ -52,6 +52,8 @@ const options = {
 const quoteSlice = createSlice(options);
 
 export const todayQuote = state => state.quote.quote; 
+export const loadingStatus = state => state.quote.isLoading;
+export const errorStatus = state => state.quote.hasError;
 
 export default quoteSlice.reducer;
  
