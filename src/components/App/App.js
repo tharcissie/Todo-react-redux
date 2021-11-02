@@ -4,6 +4,8 @@ import { useSelector, useDispatch } from 'react-redux';
 import {imagesArray, imageIndex, numberOfPages, currentPage, fetchBackground, setPage, getNextImage, getPreviousImage} from '../background/backgroundSlice'
 import Quote from '../quotes/quote';
 import Weather from '../weather/weather';
+import InputTodos from '../goals/input'
+import  GoalList from '../goals/goalList'
 
 function App() {
     const dispatch = useDispatch();
@@ -61,6 +63,7 @@ function App() {
     return (
         <div className="App" style={style} >
             <Weather/>
+            <InputTodos />
             <section >
                 <span id="prev"  onClick={handlePreviousImage}>
                     arrow_back_ios
@@ -70,6 +73,7 @@ function App() {
                 </span>
             </section>
             <Quote/>
+            < GoalList/>
         </div>
     );
 }

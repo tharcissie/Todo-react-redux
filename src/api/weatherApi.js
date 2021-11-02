@@ -1,5 +1,3 @@
-const APIkey = '799362d1f94c35181b97ab15bf639012';
-const city = 'Kigali';
 
 const weatherAPI = {
     async fetchMyweather() {
